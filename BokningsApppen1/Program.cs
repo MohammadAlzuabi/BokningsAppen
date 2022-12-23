@@ -1,4 +1,4 @@
-﻿namespace ResturangBokning
+﻿namespace BokningsAppen
 {
     internal class Program
     {
