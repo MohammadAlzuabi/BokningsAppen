@@ -4,7 +4,7 @@
 
 namespace BokningsAppen1.Migrations
 {
-    public partial class First : Migration
+    public partial class Azure : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,7 +34,7 @@ namespace BokningsAppen1.Migrations
                     WeekNumber = table.Column<int>(type: "int", nullable: true),
                     DayofWeek = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Empty = table.Column<bool>(type: "bit", nullable: false),
-                    RoomId = table.Column<int>(type: "int", nullable: false)
+                    RoomId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -43,8 +43,7 @@ namespace BokningsAppen1.Migrations
                         name: "FK_Bookings_Rooms_RoomId",
                         column: x => x.RoomId,
                         principalTable: "Rooms",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(

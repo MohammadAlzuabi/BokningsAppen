@@ -55,8 +55,6 @@ namespace BokningsAppen1.Data
                         StatistikPage.RunProgram();
                         break;
                     case 4:
-                        Console.Clear();
-                        StatistikPage.RunProgram();
                         StartPage.Run();
                         break;
                 }

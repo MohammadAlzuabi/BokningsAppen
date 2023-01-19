@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BokningsAppen1.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20230113114743_Secound")]
-    partial class Secound
+    [Migration("20230119154438_Azure")]
+    partial class Azure
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

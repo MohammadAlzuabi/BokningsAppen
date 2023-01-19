@@ -11,7 +11,6 @@ namespace BokningsAppen1.Data
     {
         public static void GetAllRooms()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine( "=======\nRUM\n¤==========================================================¤");
             using (var db = new MyDbContext())
             {

@@ -11,7 +11,7 @@ namespace BokningsAppen1.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=Bookingapp;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=tcp:mohammad2.database.windows.net,1433;Initial Catalog=BokningAppen;Persist Security Info=False;User ID=mohammad;Password=alzuabi1#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
 
         public DbSet<ConferenceRoom>? Rooms { get; set; }

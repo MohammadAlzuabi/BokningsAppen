@@ -165,7 +165,7 @@ namespace BokningsAppen1.Data
                 new Models.Booking { DayofWeek = "Sön", WeekNumber = 4, }
 
                );
-                //db.SaveChanges();
+                db.SaveChanges();
             }
         }
 
